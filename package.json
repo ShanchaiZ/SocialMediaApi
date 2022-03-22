@@ -1,0 +1,25 @@
+{
+  "name": "SocialMediaApi",
+  "version": "1.0.0",
+  "description": "Social Media App built with Express, MongoDB and Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanchaiZ/SocialMediaApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShanchaiZ/SocialMediaApi.git/issues"
+  },
+  "homepage": "https://github.com/ShanchaiZ/SocialMediaApi.git#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.0",
+    "mongoose": "^5.10.7"
+  }
+}

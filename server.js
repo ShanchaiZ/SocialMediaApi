@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/SocialMediaApi'
   useUnifiedTopology: true
 });
 
-//This code below is used tolog mongo queries being executed!
+//This code below is used to mongo queries being executed!
 mongoose.set('debug', true);
 
 app.listen(PORT, () => console.log(`App is connected on localhost:${PORT}`));

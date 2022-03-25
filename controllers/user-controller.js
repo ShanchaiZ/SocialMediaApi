@@ -38,7 +38,7 @@ const userController = {
     // expected body:
     // {
     //     "username": "foo",
-    //     "email": "bar@baz.com"  // must follow the email format
+    //     "email": "Alpha@alphaId.com"  // must follow the email format
     // }
     createUser( req , res) {
         User.create(req.body)
@@ -50,7 +50,7 @@ const userController = {
     // expected body includes at least one of the attributes below:
     // {
     //     "username": "foo",
-    //     "email": "bar@baz.com"  // must follow the email format
+    //     "email": "Alpha@alphaId.com"  // must follow the email format
     // }
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })

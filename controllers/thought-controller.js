@@ -32,9 +32,9 @@ const thoughtController = {
     // POST /api/thoughts
     // expected body:
     // {
-    //     "thoughtText": "foo",
-    //     "username": "bar",  // should be a username that corresponds to a User instance
-    //     "userId": "baz"  // should be a userId that corresponds to the same User instance as username
+    //     "thoughtText": "exampletext",
+    //     "username": "alpha",  // should be a username that corresponds to a User instance
+    //     "userId": "alphaId"  // should be a userId that corresponds to the same User instance as username
     // }
     createThought( req , res) {
         Thought.create(req.body)
@@ -59,9 +59,9 @@ const thoughtController = {
     // PUT /api/thoughts/:id
     // expected body should include at least one of the following attributes:
     // {
-    //     "thoughtText": "foo",
-    //     "username": "bar",  // should be a username that corresponds to a User instance
-    //     "userId": "baz"  // should be a userId that corresponds to the same User instance as username
+    //     "thoughtText": "exampletext",
+    //     "username": "Alpha",  // should be a username that corresponds to a User instance
+    //     "userId": "AlphaId"  // should be a userId that corresponds to the same User instance as username
     // }
     updateThought({ params, body }, res) {
         Thought.findOneAndUpdate(
@@ -122,7 +122,7 @@ const thoughtController = {
     // DELETE /api/thoughts/:id/reactions
     // expected body should include at least one of the following attributes:
     // {
-    //     "reactionId": "baz"  // should be a reactionId in the specified Thought instance
+    //     "reactionId": "AlphaId"  // should be a reactionId in the specified Thought instance
     // }
     deleteReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
